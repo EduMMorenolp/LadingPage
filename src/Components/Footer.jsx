@@ -1,10 +1,11 @@
 import "./footer.css";
+import { languageFooter } from '../Components/LanguageContent';
 
 export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <p>&copy; 2023 By Eduardo M Moreno. Todos los derechos reservados.</p>
+        <p>&copy; 2023 By {languageFooter.autor }. Todos los derechos reservados.</p>
       </div>
       <div className="container">
         <img

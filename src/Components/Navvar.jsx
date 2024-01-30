@@ -1,6 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import "./navvar.css"
+
+import { languageNavvar } from '../Components/LanguageContent';
 
 export default function Navvar(onSectionChange) {
 
@@ -8,27 +11,22 @@ export default function Navvar(onSectionChange) {
     onSectionChange(sectionName);
   };
   
-  const languageContent = { "inicio": "Inicio", "habilidades": "Habilidades", "proyectos": "Proyectos", "certificados": "Certificados", "contacto": "Contacto" }
-
   return (
     <Navbar expand="lg" className="bg-body">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="custom-collapse">
           <Nav.Link onClick={() => handleNavLinkClick("Inicio")}>
-            {languageContent.inicio}
+            {languageNavvar.inicio}
           </Nav.Link>
           <Nav.Link onClick={() => handleNavLinkClick("Habilidades")}>
-            {languageContent.habilidades}
+            {languageNavvar.habilidades}
           </Nav.Link>
           <Nav.Link onClick={() => handleNavLinkClick("Proyectos")}>
-            {languageContent.proyectos}
-          </Nav.Link>
-          <Nav.Link onClick={() => handleNavLinkClick("Certificados")}>
-            {languageContent.certificados}
+            {languageNavvar.proyectos}
           </Nav.Link>
           <Nav.Link onClick={() => handleNavLinkClick("Contacto")}>
-            {languageContent.contacto}
+            {languageNavvar.contacto}
           </Nav.Link>
         </Navbar.Collapse>
       </Container>
