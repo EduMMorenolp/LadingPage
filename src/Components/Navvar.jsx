@@ -1,16 +1,15 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import "./navvar.css"
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "./navvar.css";
 
-import { languageNavvar } from '../Components/LanguageContent';
+import { languageNavvar } from "../Components/LanguageContent";
 
 export default function Navvar(onSectionChange) {
-
   const handleNavLinkClick = (sectionName) => {
     onSectionChange(sectionName);
   };
-  
+
   return (
     <Navbar expand="lg" className="bg-body">
       <Container>
