@@ -1,5 +1,5 @@
 
-const Main = ({ children }) => {
+const Main = () => {
     return (
       <main>
         <section id="inicio">
@@ -26,10 +26,7 @@ const Main = ({ children }) => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, perferendis fugiat cupiditate numquam eum alias fuga pariatur tempore. Nesciunt tenetur enim soluta! Amet iure, suscipit neque voluptatum modi recusandae minima.</p>
           {/* Contenido de la sección "Contacto" */}
         </section>
-  
-        {/* Otras secciones según sea necesario */}
-        
-        {children}
+
       </main>
     );
   };

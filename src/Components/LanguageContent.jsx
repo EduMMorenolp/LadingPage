@@ -1,14 +1,20 @@
 const languageNavvar = {
-  inicio: "Inicio",
-  habilidades: "Habilidades",
-  proyectos: "Proyectos",
-  certificados: "Certificados",
-  contacto: "Contacto",
+  español: {
+    inicio: "Inicio",
+    habilidades: "Habilidades",
+    proyectos: "Proyectos",
+    certificados: "Certificados",
+    contacto: "Contacto",
+  },
+  english: {},
 };
 
 const languageFooter = {
-    autor: "Eduardo M Moreno"
-}
+  español: {
+    autor: "Eduardo M Moreno",
+    texto: "Todos los derechos reservados.",
+  },
+  english: {},
+};
 
-
-export { languageNavvar, languageFooter } ;
+export { languageNavvar, languageFooter };
