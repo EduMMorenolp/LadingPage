@@ -5,7 +5,7 @@ import "./navvar.css";
 
 import { languageNavvar } from "../Components/LanguageContent";
 
-export default function Navvar(onSectionChange) {
+export default function Navvar(onSectionChange, language) {
   const handleNavLinkClick = (sectionName) => {
     onSectionChange(sectionName);
   };
