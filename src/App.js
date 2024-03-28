@@ -7,9 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
+
     return (
         <>
-            <Navvar />
+            <Navvar/>
             <Main />
             <Footer />
         </>

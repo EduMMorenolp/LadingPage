@@ -5,7 +5,9 @@ import "./navvar.css";
 
 import { languageNavvar } from "../Components/LanguageContent";
 
-export default function Navvar(onSectionChange, language) {
+export default function Navvar(onSectionChange) {
+
+
   const handleNavLinkClick = (sectionName) => {
     onSectionChange(sectionName);
   };
@@ -16,7 +18,7 @@ export default function Navvar(onSectionChange, language) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="custom-collapse">
           <Nav.Link onClick={() => handleNavLinkClick("Inicio")}>
-            {languageNavvar.inicio}
+            {languageNavvar.esp.inicio}
           </Nav.Link>
           <Nav.Link onClick={() => handleNavLinkClick("Habilidades")}>
             {languageNavvar.habilidades}

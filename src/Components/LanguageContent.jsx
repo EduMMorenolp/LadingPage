@@ -1,5 +1,5 @@
 const languageNavvar = {
-  spa: {
+  esp: {
     inicio: "Inicio",
     habilidades: "Habilidades",
     proyectos: "Proyectos",
@@ -10,7 +10,7 @@ const languageNavvar = {
 };
 
 const languageFooter = {
-  spa: {
+  esp: {
     autor: "Eduardo M Moreno",
     texto: "Todos los derechos reservados.",
   },

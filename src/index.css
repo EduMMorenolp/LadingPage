@@ -1,4 +1,4 @@
-body {
-    border: 5px solid black;
-    padding: 5px;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
