@@ -10,9 +10,9 @@ function App() {
 
     return (
         <>
-            <Navvar/>
+            <Navvar idioma="eng"/>
             <Main />
-            <Footer />
+            <Footer idioma="esp"/>
         </>
     )
 }

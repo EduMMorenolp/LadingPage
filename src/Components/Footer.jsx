@@ -1,24 +1,27 @@
-import "./footer.css";
 import { languageFooter } from '../Components/LanguageContent';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function Footer() {
+export default function Footer(idioma) {
 
   const anoActual = new Date().getFullYear();
 
-  const [language, setLanguage] = useState(languageFooter.es);
+  const [language, setLanguage] = useState(languageFooter.esp);
+
+  useEffect(() => {
+    if (idioma && idioma.idioma && languageFooter[idioma.idioma]) {
+      setLanguage(languageFooter[idioma.idioma]);
+    }
+  }, [idioma]);
 
   return (
-    <footer>
+    <footer className="bg-slate-500 rounded-lg">
       <div className="container">
-        <p>&copy; {anoActual} By {languageFooter.autor}. {languageFooter.texto}.</p>
+        <p>&copy; {anoActual} By {language.autor}. {language.texto}.</p>
       </div>
-      <div className="container">
-        <img
+        <img className="w-22 " 
           src="https://profile-counter.glitch.me/LandingPageEduDev/count.svg?"
           alt="Contador"
         />
-      </div>
       <br></br>
     </footer>
   );

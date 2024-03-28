@@ -2,9 +2,6 @@ const Main = () => {
   return (
     <main>
       <section id="inicio">
-        <div className="bg-blue-500 text-white p-4">
-          Este es mi componente con estilos de Tailwind CSS.
-        </div>
 
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Mi Botón

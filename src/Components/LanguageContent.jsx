@@ -6,7 +6,13 @@ const languageNavvar = {
     certificados: "Certificados",
     contacto: "Contacto",
   },
-  eng: {},
+  eng: {
+    inicio: "Home",
+    habilidades: "Skills",
+    proyectos: "Projects",
+    certificados: "Certificates",
+    contacto: "Contact"
+  },
 };
 
 const languageFooter = {
@@ -14,7 +20,10 @@ const languageFooter = {
     autor: "Eduardo M Moreno",
     texto: "Todos los derechos reservados.",
   },
-  eng: {},
+  eng: {
+    autor: "Eduardo M Moreno",
+    texto: "all reverser derechos",
+  },
 };
 
 export { languageNavvar, languageFooter };
